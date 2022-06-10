@@ -82,5 +82,3 @@ curl -XPOST https://${HTTP_API_ENDPOOINT}/send -d'{"MessageBody":"hello"}'
 ```
 cdk destroy
 ```
-
-----
