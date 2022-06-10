@@ -1,0 +1,31 @@
+{
+  "title": "Amazon API Gateway HTTP API to SQS to Lambda",
+  "description": "This pattern creates an HTTP API endpoint that send message to SQS and trigger a Lambda function to process the message",
+  "language": "Python",
+  "level": "200",
+  "framework": "CDK",
+  "introBox": {
+    "headline": "How it works",
+    "text": [
+      "This pattern creates an Amazon API Gateway HTTP API with a <code>send</code> route that send message to a SQS queue.",
+      "The  Amazon API Gateway HTTP API has basic CORS configured. ",
+      "Upon receiving message, SQS will trigger a Lambda function to process the message.",
+      "The function will only <code>print</code> the message only. The function written in Python."
+    ]
+  },
+  "deploy": {
+    "text": [
+      "<code>cdk deploy</code>"
+    ]
+  },
+  "testing": {
+    "text": [
+      "See the Github repo for detailed testing instructions."
+    ]
+  },
+  "cleanup": {
+    "text": [
+      "<code>cdk destroy</code>."
+    ]
+  }
+}
